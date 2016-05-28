@@ -47,4 +47,7 @@ def test_daaaangerous():
         wordcount_lib.daaaangerous()
         assert False
     except ZeroDivisionError as e:
-        assert True, 'Should throw dividebyzero'    
+        assert True, 'Should throw dividebyzero'
+
+def test_docstring():
+    assert True, _make_testfile.__doc__
