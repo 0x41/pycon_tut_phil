@@ -49,5 +49,3 @@ def test_daaaangerous():
     except ZeroDivisionError as e:
         assert True, 'Should throw dividebyzero'
 
-def test_docstring():
-    assert True, _make_testfile.__doc__
