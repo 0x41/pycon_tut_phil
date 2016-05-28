@@ -14,7 +14,6 @@ def _make_testfile(filename, data):
 
     return testfile
 
-
 def test_consume_1():
     # do a basic test of the consume function.
     testfile = _make_testfile('sometext.txt', 'a b cc\nddd')
@@ -42,4 +41,11 @@ def test_consume_3():
     assert chars == 7                     # includes whitespace in char count
     assert words == 3
     assert lines == 1
-    
+
+
+def test_daaaangerous():
+    try:
+        wordcount_lib.daaaangerous()
+        assert False
+    except ZeroDivisionError as e:
+        assert True, 'Should throw dividebyzero'    
