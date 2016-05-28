@@ -4,8 +4,7 @@ import tempfile
 import wordcount_lib
 
 def _make_testfile(filename, data):
-    "Make a temp file containing the given data; return full path to file."
-    
+    """Make a temp file containing the given data; return full path to file."""
     tempdir = tempfile.mkdtemp(prefix='wordcounttest_')
     testfile = os.path.join(tempdir, filename)
 
